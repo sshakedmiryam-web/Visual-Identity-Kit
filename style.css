@@ -552,182 +552,264 @@ section {
 /* ------------------- */
 /* MOBILE */
 /* ------------------- */
+/* ------------------- */
+/* MOBILE */
+/* ------------------- */
 
-@media (max-width:768px) {
+@media(max-width:768px){
 
-    /* ---------- GENERAL ---------- */
+/* ------------------- */
+/* GENERAL */
+/* ------------------- */
 
-    section{
-        padding:60px 25px;
-    }
+section{
+    padding:60px 20px;
+}
 
-    h1{
-        font-size:1.9rem;
-        line-height:1.4;
-    }
+h1{
+    font-size:2rem;
+    line-height:1.35;
+}
 
-    h2{
-        font-size:1.8rem;
-        margin-bottom:35px;
-    }
+h2{
+    font-size:1.7rem;
+    margin-bottom:35px;
+}
 
-    h3{
-        font-size:1.2rem;
-    }
+h3{
+    font-size:1.15rem;
+}
 
-    p{
-        font-size:1rem;
-    }
+p{
+    font-size:0.95rem;
+}
 
-    /* ---------- NAV ---------- */
 
-    nav{
-        justify-content:flex-start;
-        overflow-x:auto;
-        white-space:nowrap;
-        gap:20px;
-        padding:15px;
-        flex-wrap:nowrap;
-    }
+/* ------------------- */
+/* NAV */
+/* ------------------- */
 
-    nav::-webkit-scrollbar{
-        display:none;
-    }
+nav{
+    padding:15px 20px;
+    gap:25px;
+    overflow-x:auto;
+    justify-content:flex-start;
+    flex-wrap:nowrap;
+}
 
-    nav a{
-        flex-shrink:0;
-    }
+nav a{
+    flex-shrink:0;
+    font-size:0.95rem;
+}
 
-    /* ---------- HERO ---------- */
 
-    header{
-        min-height:auto;
-        padding:120px 25px 70px;
-    }
+/* ------------------- */
+/* HERO */
+/* ------------------- */
 
-    header p{
-        font-size:1rem;
-    }
+header{
+    min-height:auto;
+    padding:100px 20px 70px;
+}
 
-    .Flower_header{
-        width:280px;
-        margin-bottom:25px;
-    }
+.Flower_header{
+    width:240px;
+    margin-bottom:20px;
+}
 
-    .btn{
-        width:100%;
-        max-width:280px;
-        text-align:center;
-    }
+header p{
+    font-size:1rem;
+    margin-bottom:30px;
+}
 
-    /* ---------- CARDS ---------- */
+.btn{
+    width:100%;
+    max-width:280px;
+}
 
-    .cards{
-        grid-template-columns:1fr;
-        gap:20px;
-    }
 
-    .card{
-        padding:28px;
-    }
+/* ------------------- */
+/* CARDS */
+/* ------------------- */
 
-    /* ---------- ILLUSTRATIONS ---------- */
+.cards{
+    grid-template-columns:1fr;
+    gap:20px;
+}
 
-    .Camera,
-    .Patient,
-    .IPhone,
-    .Stars{
-        width:80px;
-        display:block;
-        margin:25px auto 0;
-    }
 
-    /* ---------- BACKGROUND IMAGES ---------- */
+.card{
+    padding:25px;
+    border-radius:20px;
+}
 
-    #problems,
-    #benefits,
-    #process,
-    #faq,
-    #pricing{
-        background-size:180px;
-        background-position:left bottom;
-    }
 
-    /* ---------- PROCESS ---------- */
+/* ------------------- */
+/* PROBLEM ICONS */
+/* ------------------- */
 
-    .steps{
-        padding:0;
-        gap:18px;
-    }
+.Camera,
+.Patient,
+.IPhone,
+.Stars{
+    width:75px;
+    display:block;
+    margin:25px auto 0;
+}
 
-    .steps div{
-        padding:22px;
-    }
 
-    /* ---------- ABOUT ---------- */
+/* ------------------- */
+/* BACKGROUND DECOR */
+/* ------------------- */
 
-    #about p{
-        font-size:1rem;
-    }
+#problems,
+#benefits,
+#process,
+#faq,
+#pricing{
 
-    /* ---------- PORTFOLIO ---------- */
+    background-size:160px;
+    background-position:left bottom;
 
-    .portfolio{
-        grid-template-columns:1fr;
-    }
+}
 
-    .portfolio img{
-        height:240px;
-    }
 
-    /* ---------- FAQ ---------- */
+/* ------------------- */
+/* BENEFITS */
+/* ------------------- */
 
-    details{
-        padding:20px;
-    }
+#benefits .card{
 
-    summary{
-        font-size:17px;
-    }
+    min-height:150px;
 
-    /* ---------- PRICING ---------- */
+}
 
-    #pricing{
-        padding:70px 25px;
-    }
 
-    #pricing h3{
-        font-size:2.5rem;
-    }
+/* ------------------- */
+/* PROCESS */
+/* ------------------- */
 
-    /* ---------- TABLE ---------- */
+.steps{
+    padding:0;
+    gap:15px;
+}
 
-    table{
-        font-size:14px;
-    }
 
-    th,
-    td{
-        padding:12px;
-    }
+.steps div{
+    padding:20px;
+}
 
-    /* ---------- CONTACT ---------- */
 
-    #contact .cards{
-        max-width:320px;
-        margin:auto;
-    }
+/* ------------------- */
+/* ABOUT */
+/* ------------------- */
 
-    #contact .card{
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        justify-content:center;
-        gap:12px;
-    }
+#about{
+    padding-left:30px;
+    padding-right:30px;
+}
 
-    .icon-contact{
-        width:42px;
-    }
+
+/* ------------------- */
+/* PORTFOLIO */
+/* ------------------- */
+
+.portfolio{
+    grid-template-columns:1fr;
+}
+
+
+.portfolio img{
+    height:220px;
+}
+
+
+/* ------------------- */
+/* FAQ */
+/* ------------------- */
+
+details{
+    padding:18px;
+}
+
+
+summary{
+    font-size:16px;
+}
+
+
+/* ------------------- */
+/* PRICE */
+/* ------------------- */
+
+#pricing{
+
+    padding:60px 20px;
+
+}
+
+
+#pricing h3{
+
+    font-size:2.4rem;
+
+}
+
+
+#pricing ul{
+
+    margin-top:25px;
+
+}
+
+
+/* ------------------- */
+/* TABLE */
+/* ------------------- */
+
+table{
+
+    font-size:13px;
+
+}
+
+
+th,
+td{
+
+    padding:10px 8px;
+
+}
+
+
+/* ------------------- */
+/* CONTACT */
+/* ------------------- */
+
+
+#contact .cards{
+
+    max-width:280px;
+    margin:auto;
+
+}
+
+
+#contact .card{
+
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    align-items:center;
+    gap:20px;
+
+}
+
+
+.icon-contact{
+
+    width:40px;
+
+}
 
 }
