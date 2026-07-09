@@ -14,3 +14,10 @@ images.forEach((img) => {
 lightbox.addEventListener("click", () => {
     lightbox.classList.remove("active");
 });
+
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+
+hamburger.addEventListener("click",()=>{
+    navLinks.classList.toggle("open");
+});
