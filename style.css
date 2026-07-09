@@ -52,6 +52,10 @@ nav a:hover {
     color: #A38B6D;
 }
 
+.hamburger{
+    display:none;
+}
+
 /* ------------------- */
 /* GENERAL */
 /* ------------------- */
@@ -554,423 +558,168 @@ section {
 
 @media(max-width:768px){
 
-
-/* ------------------- */
-/* GENERAL */
-/* ------------------- */
-
-section{
-    padding:60px 20px;
-}
-
-h1{
-    font-size:2rem;
-    line-height:1.35;
-}
-
-h2{
-    font-size:1.7rem;
-    margin-bottom:30px;
-}
-
-h3{
-    font-size:1.15rem;
-}
-
-p{
-    font-size:0.95rem;
-}
-
-body{
-    overflow-x:hidden;
-}
-
-
-
-/* ------------------- */
-/* NAVBAR HAMBURGER */
-/* ------------------- */
+/* NAV */
 
 nav{
-
-    padding:15px 20px;
-    justify-content:space-between;
-    align-items:center;
-
+    padding:20px;
+    justify-content:flex-start;
 }
-
-
-/* מסתיר את הקישורים במובייל */
-
-nav ul{
-
-    display:none;
-
-    position:absolute;
-    top:70px;
-    right:20px;
-
-    width:220px;
-
-    flex-direction:column;
-    gap:20px;
-
-    padding:25px;
-
-    background:white;
-
-    border-radius:20px;
-
-    box-shadow:0 10px 30px rgba(0,0,0,0.15);
-
-    z-index:1000;
-
-}
-
-
-/* כאשר JS מוסיף active */
-
-nav ul.active{
-
-    display:flex;
-
-}
-
-
-nav a{
-
-    font-size:1rem;
-
-}
-
-
-
-/* כפתור המבורגר */
 
 .hamburger{
-
     display:flex;
     flex-direction:column;
     gap:6px;
     cursor:pointer;
-
 }
-
 
 .hamburger span{
-
-    width:28px;
+    width:30px;
     height:3px;
-    background:#111;
+    background:#2D2D2D;
     border-radius:5px;
-
 }
 
+.nav-links{
+    display:none;
+    position:absolute;
+    top:75px;
+    right:20px;
+    background:#F7F5F2;
+    padding:25px;
+    border-radius:20px;
+    flex-direction:column;
+    gap:20px;
+    width:220px;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
 
+.nav-links.open{
+    display:flex;
+}
 
-/* ------------------- */
 /* HERO */
-/* ------------------- */
+
+h1{
+    font-size:2.2rem;
+}
 
 header{
-
-    min-height:auto;
-
-    padding:90px 20px 70px;
-
-    background-size:cover;
-    background-position:center;
-
+    padding-top:100px;
 }
 
-
-.Flower_header{
-
-    width:240px;
-
-}
-
-
-
-/* ------------------- */
-/* BACKGROUND IMAGES */
-/* ------------------- */
+/* BACKGROUND */
 
 #problems,
 #benefits,
 #process,
-#faq,
 #pricing{
-
     background-size:cover;
-
     background-position:center;
-
-    background-repeat:no-repeat;
-
 }
 
-
-
-/* ------------------- */
-/* CARDS */
-/* ------------------- */
-
-
-.cards{
-
-    grid-template-columns:1fr;
-
-    gap:25px;
-
-}
-
-
-
-.card{
-
-    width:100%;
-
-    height:auto;
-
-    min-height:unset;
-
-    padding:30px 25px;
-
-    border-radius:20px;
-
-}
-
-
-
-.card img{
-
-    max-width:100%;
-
-    height:auto;
-
-}
-
-
-
-/* ------------------- */
 /* BENEFITS */
-/* ------------------- */
-
+.cards2{
+   grid-template-columns:1fr;
+}
 
 #benefits .card{
-
-    min-height:220px;
-
+    min-height:230px;
+    display:flex;
+    flex-direction:column;
     justify-content:flex-start;
-
+    align-items:center;
 }
 
-
-#benefits .card p{
-
-    margin-top:15px;
-
-}
-
-
-
-/* ------------------- */
-/* ICONS */
-/* ------------------- */
-
-
-.Camera,
-.Patient,
-.IPhone,
-.Stars{
-
-    width:75px;
-
-    display:block;
-
-    margin:25px auto 0;
-
-}
-
-
-
-/* ------------------- */
-/* PROCESS */
-/* ------------------- */
-
-
-.steps{
-
-    padding:0;
-
-    gap:20px;
-
-}
-
-
-.steps div{
-
-    padding:25px;
-
-}
-
-
-
-/* ------------------- */
-/* ABOUT */
-/* ------------------- */
-
-
-#about{
-
-    padding-left:20px;
-
-    padding-right:20px;
-
-}
-
-
-
-/* ------------------- */
-/* PORTFOLIO */
-/* ------------------- */
-
-
-.portfolio{
-
-    grid-template-columns:1fr;
-
-}
-
-
-.portfolio img{
-
-    height:auto;
-
-    max-height:300px;
-
-}
-
-
-
-/* ------------------- */
-/* FAQ */
-/* ------------------- */
-
-
-details{
-
-    padding:18px;
-
-}
-
-
-
-/* ------------------- */
 /* PRICE */
-/* ------------------- */
 
+.boxPricing{
+    width:90%;
+    right:auto;
+    margin:auto;
+    padding:25px;
+}
 
 #pricing{
-
-    padding:45px 15px;
-
+    padding:50px 15px;
 }
 
-
-
-#pricing .card,
-.price-card{
-
-    width:100%;
-
-    max-width:430px;
-
-    margin:auto;
-
-    padding:30px 25px;
-
+.btcall{
+    padding:18px 45px;
 }
 
-
-
-#pricing h3{
-
-    font-size:2.2rem;
-
-}
-
-
-
-#pricing ul{
-
-    margin-top:15px;
-
-    padding-right:20px;
-
-}
-
-
-#pricing li{
-
-    margin-bottom:10px;
-
-}
-
-
-
-/* ------------------- */
-/* TABLE */
-/* ------------------- */
-
-
-table{
-
-    font-size:13px;
-
-}
-
-
-th,
-td{
-
-    padding:10px 8px;
-
-}
-
-
-
-/* ------------------- */
 /* CONTACT */
-/* ------------------- */
-
-
 #contact .cards{
-
-    max-width:100%;
-
-}
-
-
-#contact .card{
-
-    display:flex;
-
-    flex-direction:row;
-
+    flex-direction:column;
     align-items:center;
-
-    gap:15px;
+}
 
 }
 
+/* =========================
+   MOBILE ADJUSTMENTS FINAL
+========================= */
 
-.icon-contact{
-
-    width:40px;
-
+/* =========================
+   PROBLEMS CARDS
+========================= */
+#problems .cards{
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
 }
 
-
+#problems .card{
+    min-height:240px;
+    padding:25px 20px;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:center;
 }
+
+/* =========================
+   BENEFITS CARDS
+========================= */
+
+#benefits .cards2{
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+#benefits .card{
+    min-height:230px;
+}
+
+/* =========================
+   PROCESS STEPS
+========================= */
+
+.steps{
+    grid-template-columns:repeat(2,1fr);
+    padding:0;
+    gap:20px;
+}
+
+.steps div{
+    padding:25px 15px;
+    min-height:100px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+/* =========================
+   PRICE CENTER
+========================= */
+
+.boxPricing{
+    width:90%;
+    right:auto;
+    left:auto;
+    margin:0 auto;
+}
+
+#pricing{
+    display:flex;
+    justify-content:center;
+}
+
