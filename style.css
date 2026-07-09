@@ -548,15 +548,12 @@ section {
     }
 }
 
-
-/* ------------------- */
-/* MOBILE */
-/* ------------------- */
 /* ------------------- */
 /* MOBILE */
 /* ------------------- */
 
 @media(max-width:768px){
+
 
 /* ------------------- */
 /* GENERAL */
@@ -573,7 +570,7 @@ h1{
 
 h2{
     font-size:1.7rem;
-    margin-bottom:35px;
+    margin-bottom:30px;
 }
 
 h3{
@@ -584,23 +581,91 @@ p{
     font-size:0.95rem;
 }
 
+body{
+    overflow-x:hidden;
+}
+
+
 
 /* ------------------- */
-/* NAV */
+/* NAVBAR HAMBURGER */
 /* ------------------- */
 
 nav{
+
     padding:15px 20px;
-    gap:25px;
-    overflow-x:auto;
-    justify-content:flex-start;
-    flex-wrap:nowrap;
+    justify-content:space-between;
+    align-items:center;
+
 }
 
-nav a{
-    flex-shrink:0;
-    font-size:0.95rem;
+
+/* מסתיר את הקישורים במובייל */
+
+nav ul{
+
+    display:none;
+
+    position:absolute;
+    top:70px;
+    right:20px;
+
+    width:220px;
+
+    flex-direction:column;
+    gap:20px;
+
+    padding:25px;
+
+    background:white;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+
+    z-index:1000;
+
 }
+
+
+/* כאשר JS מוסיף active */
+
+nav ul.active{
+
+    display:flex;
+
+}
+
+
+nav a{
+
+    font-size:1rem;
+
+}
+
+
+
+/* כפתור המבורגר */
+
+.hamburger{
+
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+    cursor:pointer;
+
+}
+
+
+.hamburger span{
+
+    width:28px;
+    height:3px;
+    background:#111;
+    border-radius:5px;
+
+}
+
 
 
 /* ------------------- */
@@ -608,58 +673,27 @@ nav a{
 /* ------------------- */
 
 header{
+
     min-height:auto;
-    padding:100px 20px 70px;
+
+    padding:90px 20px 70px;
+
+    background-size:cover;
+    background-position:center;
+
 }
+
 
 .Flower_header{
+
     width:240px;
-    margin-bottom:20px;
+
 }
 
-header p{
-    font-size:1rem;
-    margin-bottom:30px;
-}
-
-.btn{
-    width:100%;
-    max-width:280px;
-}
 
 
 /* ------------------- */
-/* CARDS */
-/* ------------------- */
-
-.cards{
-    grid-template-columns:1fr;
-    gap:20px;
-}
-
-
-.card{
-    padding:25px;
-    border-radius:20px;
-}
-
-
-/* ------------------- */
-/* PROBLEM ICONS */
-/* ------------------- */
-
-.Camera,
-.Patient,
-.IPhone,
-.Stars{
-    width:75px;
-    display:block;
-    margin:25px auto 0;
-}
-
-
-/* ------------------- */
-/* BACKGROUND DECOR */
+/* BACKGROUND IMAGES */
 /* ------------------- */
 
 #problems,
@@ -668,104 +702,228 @@ header p{
 #faq,
 #pricing{
 
-    background-size:160px;
-    background-position:left bottom;
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
 
 }
+
+
+
+/* ------------------- */
+/* CARDS */
+/* ------------------- */
+
+
+.cards{
+
+    grid-template-columns:1fr;
+
+    gap:25px;
+
+}
+
+
+
+.card{
+
+    width:100%;
+
+    height:auto;
+
+    min-height:unset;
+
+    padding:30px 25px;
+
+    border-radius:20px;
+
+}
+
+
+
+.card img{
+
+    max-width:100%;
+
+    height:auto;
+
+}
+
 
 
 /* ------------------- */
 /* BENEFITS */
 /* ------------------- */
 
+
 #benefits .card{
 
-    min-height:150px;
+    min-height:220px;
+
+    justify-content:flex-start;
 
 }
+
+
+#benefits .card p{
+
+    margin-top:15px;
+
+}
+
+
+
+/* ------------------- */
+/* ICONS */
+/* ------------------- */
+
+
+.Camera,
+.Patient,
+.IPhone,
+.Stars{
+
+    width:75px;
+
+    display:block;
+
+    margin:25px auto 0;
+
+}
+
 
 
 /* ------------------- */
 /* PROCESS */
 /* ------------------- */
 
+
 .steps{
+
     padding:0;
-    gap:15px;
+
+    gap:20px;
+
 }
 
 
 .steps div{
-    padding:20px;
+
+    padding:25px;
+
 }
+
 
 
 /* ------------------- */
 /* ABOUT */
 /* ------------------- */
 
+
 #about{
-    padding-left:30px;
-    padding-right:30px;
+
+    padding-left:20px;
+
+    padding-right:20px;
+
 }
+
 
 
 /* ------------------- */
 /* PORTFOLIO */
 /* ------------------- */
 
+
 .portfolio{
+
     grid-template-columns:1fr;
+
 }
 
 
 .portfolio img{
-    height:220px;
+
+    height:auto;
+
+    max-height:300px;
+
 }
+
 
 
 /* ------------------- */
 /* FAQ */
 /* ------------------- */
 
+
 details{
+
     padding:18px;
+
 }
 
-
-summary{
-    font-size:16px;
-}
 
 
 /* ------------------- */
 /* PRICE */
 /* ------------------- */
 
+
 #pricing{
 
-    padding:60px 20px;
+    padding:45px 15px;
 
 }
+
+
+
+#pricing .card,
+.price-card{
+
+    width:100%;
+
+    max-width:430px;
+
+    margin:auto;
+
+    padding:30px 25px;
+
+}
+
 
 
 #pricing h3{
 
-    font-size:2.4rem;
+    font-size:2.2rem;
 
 }
+
 
 
 #pricing ul{
 
-    margin-top:25px;
+    margin-top:15px;
+
+    padding-right:20px;
 
 }
+
+
+#pricing li{
+
+    margin-bottom:10px;
+
+}
+
 
 
 /* ------------------- */
 /* TABLE */
 /* ------------------- */
+
 
 table{
 
@@ -782,6 +940,7 @@ td{
 }
 
 
+
 /* ------------------- */
 /* CONTACT */
 /* ------------------- */
@@ -789,8 +948,7 @@ td{
 
 #contact .cards{
 
-    max-width:280px;
-    margin:auto;
+    max-width:100%;
 
 }
 
@@ -798,10 +956,12 @@ td{
 #contact .card{
 
     display:flex;
+
     flex-direction:row;
-    justify-content:flex-start;
+
     align-items:center;
-    gap:20px;
+
+    gap:15px;
 
 }
 
@@ -811,5 +971,6 @@ td{
     width:40px;
 
 }
+
 
 }
